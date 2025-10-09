@@ -29,7 +29,7 @@ const GenerateImages = () => {
 
           if(data.success){
             setContent(data.content)
-            toast.success("Blog Title Generated!")
+            toast.success("Image Generated Successfully!")
           } else{
             toast.error(data.message)
           }
