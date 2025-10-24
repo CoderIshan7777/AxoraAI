@@ -12,7 +12,16 @@ const Navbar = () => {
 
     return (
         <div className='fixed z-5 w-full backdrop-blur-2xl flex justify-between items-center py-3 px-4 sm:px-20 xl:px-32'>
-        <img src={assets.logo} alt="logo" className='rounded-full opacity-60 h-4 sm:h-5 md:h-6 cursor-pointer object-contain' onClick={() => navigate('/')}/>
+       <p
+        onClick={() => navigate('/')}
+        className="cursor-pointer font-extrabold text-2xl sm:text-3xl tracking-widest 
+        text-[#8a307f] 
+        drop-shadow-[0_0_10px_rgba(138,48,127,0.8)] 
+        hover:drop-shadow-[0_0_20px_rgba(138,48,127,1)] 
+        transition duration-300"
+        >
+        AxoraAI
+        </p>
 
         {
             user ? <UserButton />:( <button onClick={openSignIn} className="flex items-center gap-2 rounded-full text-sm cursor-pointer bg-indigo-600 text-white px-10 py-2.5">
