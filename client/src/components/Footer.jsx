@@ -17,12 +17,16 @@ const Footer = () =>{
             <footer className="px-6 md:px-16 lg:px-24 xl:px-32 w-full text-sm text-slate-500 bg-[#F5EFE6] pt-10">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
                     <div className="sm:col-span-2 lg:col-span-1">
-                            <img 
-                                src={assets.logo}
-                                alt="PrebuiltUI Logo" 
-                                className="w-[157px] h-[40px]" 
-                                onClick={()=> navigate('/')}
-                            />
+                            <p
+                            onClick={() => navigate('/')}
+                            className="cursor-pointer font-extrabold text-2xl sm:text-3xl tracking-widest 
+                            text-[#8a307f] 
+                            drop-shadow-[0_0_10px_rgba(138,48,127,0.8)] 
+                            hover:drop-shadow-[0_0_20px_rgba(138,48,127,1)] 
+                            transition duration-300"
+                            >
+                            AxoraAI
+                            </p>
                         <p className="text-sm/7 mt-6">
                             Experience the power of AI with AxoraAi. <br />
                             Transform your content creation with our suite of premium AI tools. 
