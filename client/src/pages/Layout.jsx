@@ -16,7 +16,16 @@ const Layout = () => {
     <div className='flex flex-col items-start justify-start h-screen'>
 
       <nav className='w-full px-8 min-h-14 flex items-center justify-between border-b border-gray-200'>
-        <img src={assets.logo} className='cursor-pointer w-32 sm:w-44' alt="" onClick={()=>navigate('/')}  />
+        <p
+          onClick={() => navigate('/')}
+          className="cursor-pointer font-extrabold text-2xl sm:text-3xl tracking-widest 
+          text-[#8a307f] 
+          drop-shadow-[0_0_10px_rgba(138,48,127,0.8)] 
+          hover:drop-shadow-[0_0_20px_rgba(138,48,127,1)] 
+          transition duration-300"
+        >
+          AxoraAI
+        </p>
         {
           sidebar ? <X onClick={()=> setSidebar(false)} className='w-6 h-6 text-gray-600 sm:hidden' />:
           <Menu onClick={()=> setSidebar(true)} className='w-6 h-6 text-gray-600 sm:hidden' />
